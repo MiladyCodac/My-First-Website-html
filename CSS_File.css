@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  to use a style sheet use this code   <link rel="stylesheet" type="text/css" href="path to file">  */
+ body {
+        background: #fffbec;  		/*  page color */
+        font-family: sans-serif;	/*  font choices serif, sans-serif, monospace, cursive, fantasy  */	
+        font-size: 16pt;			/*  font size in pt, px or em  */	
+    }
+   
+h1, h2 {							/*   list mutiple tags with commas to set similar stuff */
+	color: #cfb46b;					/*  color  */
+	font-size: 20pt;				/*  size of font  */
+    }
+
+h3{ line-height: normal; 			/*  not have extra line  */
+	font-size: 14pt;				
+	font-weight: normal;			/*  not be bold   */
+}			
+
+p {									/*   all p tags */
+    font-size: 14pt;				
+	font-family: sans-serif;		
+    }
+
+a:link{								/*  Active links  */
+	color: #0C9341;
+	text-decoration: none;			/*  removes underline on links  */
+    }
+	
+a:visited {							/*  Visited links  */
+	color: #04510F;
+    }
+
+a:hover {							/*  Hover over link color  */
+	color: #B57D04;
+	text-decoration: underline;		/*  underlines link  */
+    }
+
+a:active {
+	color: #ED080C;					/*  while you are clicking link  */
+		}
+
+table, th, td {						/*   table, th and td tags */
+	border: 1px dashed;		/*   could be dotted, dashed, solid, double, groove, ridge, none  */
+									/*  set each border seperatly use something like:   border-top-style, border-left-style, border-bottom-style, border-top-style */
+	border-radius: 7px;				/*  can set each corner seperatly or this way to do all 4 */
+	
+	border-collapse: collapse;		/*  remove if you want double walls inside table   */
+	border-color: #cfb46b; 			/*  border color   */
+}
+
+th {
+    text-align: left;				/*   alignment in cells  */
+}
+
+tr:nth-child(even){					/*  Use to format only even rows */
+	background-color: #CFF0C1;
+}
+
+tr:nth-child(odd){					/*  format only odd rows */
+	background-color: #DDDDDD;
+}
+
+input[type=text] {					/*  testboxes */
+    border: 2px solid red;			/*  border - same settings as table */
+    border-radius: 4px;				/*  same as table settings */
+	color: "#000000"; 				/* color in textbox  */
+	background-color: #97DFC4;		/*  color of textboxes */
+}
+
+textarea {							/* this would be a text area, like a comment box  */
+    width: 125px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+select {							/*  select box or dropdown  */
+    width: 100%;
+    padding: 16px 20px;				/* top & bottom, left & right padding   - can do each side seperately  */
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+input[type=button], input[type=submit], input[type=reset] {			/*  formatting buttons...specifically submit and reset */
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 15px; /* top & bottom padding     left & right padding */
+	margin: 4px 2px;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 7px;
+	border-collapse: collapse;
+}
+
+
+		
